@@ -13,8 +13,9 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
+  background: #272822;
+  color: #F8F8F2;
+  font: .7em Menlo, Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
 }
@@ -25,13 +26,24 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a, a:visited {
+  color: #B1654B;
+  text-decoration: none;
+}
+
+a:hover      { color: #F79273; }
 
 table {
   font-size: inherit;
   font: 100%;
+}
+
+::selection{
+  background-color: #fd971f;
+}
+
+::-moz-selection{
+  background-color: #fd971f;
 }
 
 /*****************************************************************************/
@@ -79,11 +91,12 @@ ul.posts span {
 }
 
 .site .header h1.title a {
-  color: #a00;
+  color: #a6e22e;
 }
 
 .site .header h1.title a:hover {
-  color: #000;
+  background-color: #a6e22e;
+  color:#FFF;
 }
 
 .site .header a.extra {
@@ -92,7 +105,8 @@ ul.posts span {
 }
 
 .site .header a.extra:hover {
-  color: #000;
+  color: #FFF;
+  background-color: #aaa;
 }
 
 .site .meta {
@@ -102,7 +116,7 @@ ul.posts span {
 .site .footer {
   font-size: 80%;
   color: #666;
-  border-top: 4px solid #eee;
+  border-top: 1px solid #d0d0d0;
   margin-top: 2em;
   overflow: hidden;
 }
@@ -113,7 +127,7 @@ ul.posts span {
 }
 
 .site .footer .contact a {
-  color: #8085C1;
+  color: #AE81FF;
 }
 
 .site .footer .rss {
@@ -134,9 +148,10 @@ ul.posts span {
 
 /* standard */
 .post pre {
+  padding: 1em .4em;
   border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+  background-color: #49483e;
+  border-radius: 10px;
 }
 
 .post ul, .post ol {
@@ -144,8 +159,6 @@ ul.posts span {
 }
 
 .post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
   padding: 0 .2em;
 }
 
